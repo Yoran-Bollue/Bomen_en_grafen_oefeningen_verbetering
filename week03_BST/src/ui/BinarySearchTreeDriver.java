@@ -15,7 +15,11 @@ public class BinarySearchTreeDriver {
 
 		printBoomInfo(boom);
 
-		
+		System.out.println(boom.getPath(9));
+
+		boom.removeNode(5);
+
+		printBoomInfo(boom);
 	}
 
 	private static void printBoomInfo(BinarySearchTree<Integer> boom) {

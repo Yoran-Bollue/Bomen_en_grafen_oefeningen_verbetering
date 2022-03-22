@@ -141,10 +141,10 @@ public class BinaryMinHeap<E extends Comparable<E>> {
 
     public ArrayList<E> getPath(E value) {
         // TODO zie oefening 6;
-        if (!values.contains(value)) throw new IllegalArgumentException("Opgegeven waarde zit niet in heap");
+        if (!values.contains(value)) return null;
         else {
             ArrayList<E> path = new ArrayList<E>();
-            path.add(values.get(0));
+            //path.add(values.get(0));
 
             path.add(value);
             int huidigeIndex = getIndex(value);
